@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML FORM</title>
+  <style>
+    .input_text {
+      type: text;
+      width: 180px;
+      margin:0;
+      padding: 0;
+      position: absolute;
+      left: 130px;
+      value: default;
+    }
+    .div_format {
+      align-text: justify;
+      padding: 20px;
+      background-color:lightgrey;
+      position:absolute;
+      left:260px;
+      right:400px;
+      width = 70%;
+    }
+    .start{
+      color:red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div_format" >
+    <h1>
+      <strong>
+        <center>HTML form exercise</center>
+      </strong>
+    </h1>
+    <p>
+      <initial class="start">Please note:</initial> This Example demonstrate how HTML forms can be used. Submit button
+      should submit the button and reset button should reset the form(revert the changes
+      in the form fields). The form layout should be same as below.
+    </p>
+    <h2><strong>Contact form</strong></h2>
+    <form style="line-height:23px">
+      Your name*: &emsp;
+      <input class = "input_text" name="name">
+      <br>
+      E-mail*: &emsp;
+      <input class = "input_text" name="email">
+      <br>
+      Phone number: &emsp;
+      <input class="input_text" name="phone_number">
+      <br>
+      Website:* &emsp;
+      <input class="input_text" name="website" value="http://" style="width:240px">
+      <br><br>
+      Comments*:
+      <br>
+      <textarea name="comment" rows="6" cols="30"></textarea>
+      <br><br>
+      <strong>Text field</strong>
+      <br>
+      Your name:
+      <input class="input_text" name="your name">
+      <br>
+      <strong>Password field</strong>
+      <br>
+      Password:
+      <input class="input_text" type="password" name="password">
+      <br><br>
+      <strong>Radio buttons</strong>
+      <br>
+      Do you like pizza?
+      <br>
+      <input type="radio" name="answer" value="yes" checked>Yes<br>
+      <input type="radio" name="answer" value="no">No<br>
+      <input type="radio" name="answer" value="maybe">Maybe<br>
+      <input type="radio" name="answer" value="never tried">Never tried<br>
+      <br>
+      <strong>Check Box</strong>
+      <br>
+      <input type="checkbox" name="review" value="yes">Check this box if you like our service
+      <br><br>
+      <strong>Anything you would like to say?</strong>
+      <br>
+      <textarea name="message" rows="4" cols="40"></textarea>
+      <br><br>
+      <strong>I Like</strong>
+      <br><br>
+      <select size="5" name="likes">
+        <option value="mushrooms">mushrooms</option>
+        <option value="green peppers">green peppers</option>
+        <option value="onions">onions</option>
+        <option value="tomatoes">tomatoes</option>
+        <option value="olives">olives</option>
+      </select>
+      <br><br>
+      <strong>Menu</strong>
+      <br>
+      Your favorite color:
+      <br>
+      <select name="color">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="yellow">yellow</option>
+        <option value="green">green</option>
+        <option value="black">black</option>
+        <option value="white">white</option>
+      </select>
+      <br><br>
+      <strong>Attach file</strong>
+      <br>
+      <input type="file" name="file">
+      <br><br>
+      <strong>Buttons</strong>
+      <br>
+      <input type="submit" value="submit" style="padding-left:10px; padding-right:10px">
+      &ensp;
+      <input type="reset" value="reset" style="padding-left:10px; padding-right:10px">
+    </form>
+  </div>
+</body>
+
+</html>
